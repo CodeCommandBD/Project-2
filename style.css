@@ -19,15 +19,15 @@ nav {
     
 }
 
-ul {
+nav>ul {
     display: flex;
     
 }
-ul li {
+nav>ul li {
     list-style-type: none;
     margin: 0 5px;
 }
-ul li a {
+nav>ul li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -38,7 +38,7 @@ ul li a {
     transition: 0.5s;
     text-transform: uppercase;
 }
-ul li a:hover {
+nav>ul li a:hover {
     background: rgb(74, 102, 84);
     
 
@@ -132,7 +132,7 @@ header {
         position: sticky;
         top: 0;
     }
-    ul {
+    nav>ul {
         position: fixed;
         background: rgb(27, 24, 24);
         top: 100px;
@@ -148,15 +148,15 @@ header {
     
 
 
-    ul li {
+    nav>ul li {
         padding: 20px 0;
 
     }
-    ul li a {
+    nav>ul li a {
         font-size: 25px;
 
     }
-    ul li a:hover {
+    nav>ul li a:hover {
         background: none;
         color: red;
     }
@@ -216,8 +216,8 @@ header {
     padding: 10px 30px;
     margin-top: 40px;
     font-weight: bold;
-    background: red;
-    color: black;
+    background: rgb(110, 0, 253);
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -247,5 +247,106 @@ header {
     
     .smart-img {
         padding-bottom: 20px;
+    }
+}
+
+
+
+
+                                        /* section three  */
+.section-three{
+    background-image: linear-gradient(#0000003b,#000000f7),url(img/selective-focus-shot-oak-leaf-illuminated-by-golden-light-autumn-sunset-forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding: 100px 0 ;
+    background-attachment: fixed;
+}
+.parent-three {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    color: white;
+}
+                            
+.vanilla h4 {
+    font-size: 25px;
+    font-family: shanto;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.vanilla> ul {
+    padding: 20px 0;
+}
+.vanilla a {
+    text-decoration: none;
+    background: rgb(110, 0, 253);
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.single-item-parent {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px
+}   
+.about-single {
+    background: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgb(110, 0, 253);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rebeccapurple;
+}
+.about-single h3{
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: shanto;
+    
+}
+
+@media only screen and (max-width: 688px) {
+    .parent-three {
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: white;
+        
+    }
+    .single-item-parent {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px
+    }   
+    .vanilla a {
+        margin-bottom: 20px;
+    }
+
+}
+@media only screen and (min-width: 688px)and (max-width: 1099px ) {
+    .parent-three {
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: white;
+        
+    }
+    .single-item-parent {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 15px
+    }   
+    .vanilla a {
+        margin-bottom: 20px;
+        
     }
 }
