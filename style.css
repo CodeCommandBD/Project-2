@@ -608,3 +608,71 @@ form p {
         text-align: center;
     }  
 }
+
+
+
+                            /* seven section  */
+
+.it-parent {
+    display: flex;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 100px 0;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}               
+.it-img{
+    width: 100%;
+}
+
+.it-img img {
+    width: 100%;
+    
+}
+
+.it-area h2{
+    font-size: 35px;
+    font-family: shanto;
+    font-weight: bolder;
+    padding-bottom: 30px;
+}
+
+.it-area h4 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.it-area ul li{
+    list-style-position: inside;
+    font-size: 20px;
+    font-family: shanto;
+    line-height: 2;
+}
+
+@media only screen and (max-width: 688px) {
+    .it-parent {
+        display: block;
+        margin-right: 30px;
+        margin-left: 30px;
+        align-items: center;
+    } 
+    .it-area {
+        margin-bottom: 50px;
+    }
+}
+@media only screen and (min-width: 688px)and (max-width: 1099px ) {
+    
+    .it-parent {
+        display: block;
+        margin-right: 50px;
+        margin-left: 50px;
+        padding: 100px 0;
+        gap: 50px;
+        
+        align-items: center;
+    } 
+    .it-area {
+        margin-bottom: 70px;
+    }
+
+}
